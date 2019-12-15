@@ -12,7 +12,7 @@ setuptools.setup(
     description="A driver for the chili_pad modified by sani replacing the controller and powersupply.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sanielfishawy/chili-pad",
+    url="https://github.com/sanielfishawy/chili_pad",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

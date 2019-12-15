@@ -1,7 +1,7 @@
-# Chili-pad
+# chili_pad
 
 ## Description
-This is a driver class for the Chili-pad modified by Sani replacing the the control board and the powersupply.
+This is a driver class for the chili_pad modified by Sani replacing the the control board and the powersupply.
 
 ## Installation
 
