@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: chili-pad
+Version: 0.0.1
+Summary: A driver for the chili-pad modified by sani replacing the controller and powersupply.
+Home-page: https://github.com/sanielfishawy/chili-pad
+Author: Sani Elfishawy
+Author-email: elfishawy.sani@gmail.com
+License: UNKNOWN
+Description: # Chili-pad
+        
+        ## Description
+        This is a driver class for the Chili-pad modified by Sani replacing the the control board and the powersupply.
+        
+        ## Installation
+        
+        ## Usage
+        
+        [Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
