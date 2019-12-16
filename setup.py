@@ -10,7 +10,9 @@ dependency_links = []
 if platform.system is 'raspberry':
     install_requirements.append('RPi.gpio')
 else:
-    dependency_links.append('https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi')
+    dependency_links.append('git+https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi')
+
+print(dependency_links)
 
 setuptools.setup(
     name="chili_pad",

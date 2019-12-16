@@ -1,1 +1,1 @@
-https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi
+git+https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi
