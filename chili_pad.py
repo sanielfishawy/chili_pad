@@ -3,9 +3,9 @@ import RPi.GPIO as GPIO
 
 class ChiliPad:
 
-    DEFAULT_COLD_PIN = 8
-    DEFAULT_HOT_PIN = 10
-    DEFAULT_PUMP_PIN = 12
+    DEFAULT_COLD_PIN = 16
+    DEFAULT_HOT_PIN = 18
+    DEFAULT_PUMP_PIN = 22
 
     def __init__(
             self,
@@ -63,18 +63,4 @@ class ChiliPad:
 
 if __name__ == '__main__':
     cp = ChiliPad()
-    print(cp.get_pump())
-    cp.pump_on()
-    print(cp.get_pump())
-    cp.pump_off()
-    print(cp.get_pump())
-
-    print(cp.get_heat_cool())
-    cp.heat()
-    print(cp.get_heat_cool())
-    cp.cool()
-    print(cp.get_heat_cool())
-    cp.off()
-    print(cp.get_heat_cool())
-
     pass
