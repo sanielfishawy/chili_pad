@@ -1,7 +1,7 @@
 #pylint: disable=no-member
 import RPi.GPIO as GPIO
 
-class ChiliPad:
+class Driver:
 
     DEFAULT_COLD_PIN = 16
     DEFAULT_HOT_PIN = 18
@@ -62,5 +62,19 @@ class ChiliPad:
         return result
 
 if __name__ == '__main__':
-    cp = ChiliPad()
+    cp = Driver()
+    print(cp.get_pump())
+    cp.pump_on()
+    print(cp.get_pump())
+    cp.pump_off()
+    print(cp.get_pump())
+
+    print(cp.get_heat_cool())
+    cp.heat()
+    print(cp.get_heat_cool())
+    cp.cool()
+    print(cp.get_heat_cool())
+    cp.off()
+    print(cp.get_heat_cool())
+
     pass

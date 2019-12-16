@@ -1,0 +1,1 @@
+git+https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi
