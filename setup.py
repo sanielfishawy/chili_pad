@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 install_requirements = []
-if platform.system is 'raspberry':
+if platform.system() == 'Linux':
     install_requirements.append('RPi.gpio')
 else:
     install_requirements.append('rpi@git+https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi')
