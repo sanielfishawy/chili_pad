@@ -9,7 +9,7 @@ install_requirements = []
 if platform.system is 'raspberry':
     install_requirements.append('RPi.gpio')
 else:
-    install_requirements.append('rpi')
+    install_requirements.append('rpi@git+https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi')
 
 setuptools.setup(
     name="chili_pad",
