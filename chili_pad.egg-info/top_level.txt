@@ -1,1 +1,2 @@
 chili_pad
+examples
