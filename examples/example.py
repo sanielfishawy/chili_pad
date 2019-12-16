@@ -5,15 +5,19 @@
 from chili_pad.driver import Driver as CP
 
 cp = CP()
-print(cp.get_pump()) # Gets the on/off state of the pump
+
+# Gets the on/off state of the pump
+print(cp.get_pump())
+
 # Turns the pump on. Be sure pad is attached and full of water before turning on.
 cp.pump_on()
 print(cp.get_pump())
 cp.pump_off()
 print(cp.get_pump())
 
-# Get the heat/cool/off status of the heater
+# Get the heat/cool/off status of the heater.
 print(cp.get_heat_cool())
+# Turns the heater on.
 cp.heat()
 print(cp.get_heat_cool())
 cp.cool()
