@@ -1,8 +1,16 @@
 #pylint: disable=invalid-name
+import platform
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
+
+install_requirements = []
+dependency_links = []
+if platform.system is 'raspberry':
+    install_requirements.append('RPi.gpio')
+else:
+    dependency_links.append('https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi')
 
 setuptools.setup(
     name="chili_pad",
@@ -20,4 +28,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.0',
+    install_requires=install_requirements,
+    dependency_links=dependency_links,
 )
