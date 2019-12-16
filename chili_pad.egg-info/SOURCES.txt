@@ -5,6 +5,7 @@ chili_pad/driver.py
 chili_pad.egg-info/PKG-INFO
 chili_pad.egg-info/SOURCES.txt
 chili_pad.egg-info/dependency_links.txt
+chili_pad.egg-info/requires.txt
 chili_pad.egg-info/top_level.txt
 examples/__init__.py
 examples/example.py

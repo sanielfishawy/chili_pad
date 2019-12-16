@@ -5,7 +5,7 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-install_requirements = []
+install_requirements = ['git+https://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi']
 dependency_links = []
 if platform.system is 'raspberry':
     install_requirements.append('RPi.gpio')
@@ -30,6 +30,6 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.0',
-    install_requires=install_requirements,
+    install_requires=['markdown'],
     dependency_links=dependency_links,
 )
