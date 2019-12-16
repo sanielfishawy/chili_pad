@@ -1,0 +1,2 @@
+git+git://github.com/sanielfishawy/rpi_gpio_stub#egg=rpi-gpio-stub; sys_platform != 'raspberry'
+RPi.GPIO == 0.7.0; sys_platform == 'raspberry'
