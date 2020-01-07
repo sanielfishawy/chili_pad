@@ -1,0 +1,4 @@
+Power by pwm switching of current in peltiers
+
+PWM frequence = 100Hz
+PWM power control integer from 0 to 100 controls duty cycle

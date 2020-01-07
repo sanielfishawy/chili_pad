@@ -1,5 +1,6 @@
 #pylint: disable=no-member
 import RPi.GPIO as GPIO
+from pwm_power import PwmPower
 
 class Driver:
 
@@ -18,6 +19,7 @@ class Driver:
         self.pump_pin = pump_pin
         self.output_pins = [self.cool_pin, self.heat_pin, self.pump_pin]
         self.setup_pins()
+        self.pwm_power = PwmPower()
 
 
     def setup_pins(self):
@@ -60,6 +62,12 @@ class Driver:
             result = 'cool'
 
         return result
+
+    def set_power(self, power):
+        self.pwm_power.set_power(power)
+
+    def get_power(self):
+        return self.pwm_power.get_power()
 
 if __name__ == '__main__':
     cp = Driver()
