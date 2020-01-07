@@ -1,6 +1,6 @@
 #pylint: disable=no-member
 import RPi.GPIO as GPIO
-from pwm_power import PwmPower
+from chili_pad.pwm_power import PwmPower
 
 class Driver:
 
