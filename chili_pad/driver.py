@@ -50,6 +50,7 @@ class Driver:
     def off(self):
         GPIO.output(self.heat_pin, False)
         GPIO.output(self.cool_pin, False)
+        self.pwm_power.set_power(0)
 
     def get_heat_cool(self):
         h = GPIO.input(self.heat_pin)
@@ -71,6 +72,9 @@ class Driver:
 
 if __name__ == '__main__':
     cp = Driver()
+
+    pass
+
     print(cp.get_pump())
     cp.pump_on()
     print(cp.get_pump())
@@ -79,10 +83,17 @@ if __name__ == '__main__':
 
     print(cp.get_heat_cool())
     cp.heat()
+    cp.set_power(50)
     print(cp.get_heat_cool())
+    print(cp.get_power())
+
     cp.cool()
+    cp.set_power(100)
     print(cp.get_heat_cool())
+    print(cp.get_power())
+
     cp.off()
     print(cp.get_heat_cool())
+    print(cp.get_power())
 
     pass
