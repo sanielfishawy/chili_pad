@@ -64,11 +64,23 @@ class Driver:
 
         return result
 
-    def set_power(self, power):
+    def set_power(self, power: int):
         self.pwm_power.set_power(power)
 
     def get_power(self):
         return self.pwm_power.get_power()
+
+    def set_abs_power(self, power: int):
+        '''
+        Set power as an integer between -100 and 100.
+        Turns on heat or cool and sets the power appropriately
+        '''
+        if power <= 0:
+            self.cool()
+        else:
+            self.heat()
+
+        self.set_power(abs(power))
 
 if __name__ == '__main__':
     cp = Driver()
