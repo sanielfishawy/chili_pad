@@ -30,7 +30,7 @@ class PwmPower:
         elif power < 0:
             return 0
         else:
-            return int(power)
+            return round(power)
 
     def get_power(self):
         return self.power
