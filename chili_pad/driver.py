@@ -75,7 +75,7 @@ class Driver:
         Set power as an integer between -100 and 100.
         Turns on heat or cool and sets the power appropriately
         '''
-        power = int(power) # power between -1 and 1 turn off
+        power = round(power) # power between -1 and 1 turn off
         if power <= -1:
             self.cool()
         elif power >= 1:
