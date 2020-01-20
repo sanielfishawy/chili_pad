@@ -80,8 +80,6 @@ class Driver:
             self.cool()
         elif power >= 1:
             self.heat()
-        else:
-            self.off()
 
         self.set_power(abs(power))
 
