@@ -29,11 +29,9 @@ class Driver:
 
     def pump_on(self):
         GPIO.output(self.pump_pin, True)
-        return self
 
     def pump_off(self):
         GPIO.output(self.pump_pin, False)
-        return self
 
     def get_pump(self):
         return GPIO.input(self.pump_pin)
