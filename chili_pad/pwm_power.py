@@ -25,6 +25,7 @@ class PwmPower:
         return 100 - self.power
 
     def normalize_power(self, power):
+        power = int(power)
         if power > 100:
             return 100
         elif power < 0:

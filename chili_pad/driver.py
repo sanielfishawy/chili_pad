@@ -41,7 +41,6 @@ class Driver:
     def heat(self):
         GPIO.output(self.heat_pin, True)
         GPIO.output(self.cool_pin, False)
-        return self
 
     def cool(self):
         GPIO.output(self.cool_pin, True)
